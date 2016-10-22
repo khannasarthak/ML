@@ -1,0 +1,24 @@
+The file Knn.py is the solution, has been coded with Python 3.5.
+
+The scipy funciton has been used to calculate the cosine distances. (scipy.spatial.distance.cosine)
+
+Main functions : 
+	1. get_neighbors:
+		Takes training data, test case and value of k as the input parameter and returns a
+		list of k nearest neighbors in ascending cosine distances.
+	2. get_votes:
+		takes the output of get_neighbors as its input ( i.e, the list of k nearest neighbors) and calculates the vote
+		count of each neighbor. It returns the neighbor with the highest votes.
+	3. get_correct:
+		Takes the test set and the predicted values as input and returns accuracy.
+	4. main:
+		runs on test and train data finding the nearest neighbours and predicting the labels for the data. 
+		Finally a graph is plotted between the value of k and the error rate for both training error and testing error.
+
+
+The program does not store the values of the cosine distances, so might take time to reach output, sample output graph has been provided
+in the zip file named : knnGraph.png
+
+
+
+Program structure has been referred from http://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-from-scratch/
